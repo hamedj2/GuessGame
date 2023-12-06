@@ -55,7 +55,7 @@ $(document).ready(function() {
         $('#result-message').text(`I guessed it! Your number was ${currentGuess}!`).show();
         $('#game-section').hide();
         Swal.fire({
-            title: 'Congratulations!',
+            title: 'Congratulations to ME!',
             text: 'I guessed your number!',
             icon: 'success',
             confirmButtonText: 'Play Again'
