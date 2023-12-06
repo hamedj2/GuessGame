@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div id="game-container">
+        <h1 id="welcome-message" class="animate__animated">Hello! Happy to see you. May I ask your name?</h1>
+        <input type="text" id="name-input" placeholder="Enter your name" class="animate__animated">
+        <button id="start-button" class="animate__animated">Start Game</button>
+
+        <div id="game-section" style="display: none;">
+            <p>Think of a number between 1 and 100. I will try to guess it.</p>
+            <p id="guess-message" class="animate__animated"></p>
+            <button id="higher-button" class="guess-button">Higher</button>
+            <button id="lower-button" class="guess-button">Lower</button>
+            <button id="correct-button" class="guess-button">Correct</button>
+            <p id="feedback-message" class="animate__animated"></p> <!-- New element for feedback messages -->
+        </div>
+
+        <div id="result-section" style="display: none;">
+            <p id="result-message" class="animate__animated"></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
